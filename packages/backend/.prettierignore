@@ -1,0 +1,12 @@
+# Directorios generados y de dependencias
+dist/
+build/
+coverage/
+node_modules/
+
+# Archivos generados
+*.min.js
+*.js.map
+
+# Otros archivos que queremos ignorar
+.husky/
