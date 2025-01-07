@@ -13,7 +13,7 @@ export const sequelize = new Sequelize({
   database: config.DB_NAME,
   username: config.DB_USER,
   password: config.DB_PASSWORD,
-  models: [Set, Card, Image, Market], // añade todos los modelos aquí
+  models: [Set, Card, Image, Market],
   logging: false, // set to true if you want to see SQL queries
 });
 
