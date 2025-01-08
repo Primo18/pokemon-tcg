@@ -1,0 +1,55 @@
+# Normalización de saltos de línea
+# Fuerza LF para todos los archivos de código fuente
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.Dockerfile text eol=lf
+
+# Configuración específica para Windows
+# Evita conflictos de CRLF en archivos shell y scripts
+*.sh text eol=lf
+
+# Fuerza CRLF para archivos que necesitan ser ejecutables en Windows
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Configuración para pnpm lockfile
+pnpm-lock.yaml text eol=lf
+
+# Evitar normalización para archivos binarios
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+
+# Ignorar normalización para paquetes node_modules y build
+node_modules/** -text
+dist/** -text
+build/** -text
+
+# Configuración para archivos sensibles
+.env text eol=lf
+*.key binary
+*.crt binary
+
+# Docker-specific files
+.dockerignore text eol=lf
+docker-compose.yml text eol=lf
+
+# Git specific files
+.gitattributes text=auto
+.gitignore text=auto
